@@ -1,0 +1,33 @@
+name: MaintenanceMode
+version: 1.0.0
+description: Put your server in maintenance mode.
+author: joestr
+authors: [Smauq_, Doskozil, _joestr_] 
+website: https://repo.joestr.xyz/MaintenanceMode
+
+main: xyz.joestr.maintenancemode.MaintenanceMode
+database: false
+#softdepend: [Plugin, Plugin2]
+#depend: [WorldEdit, WorldGuard]
+
+commands:
+  mm:
+    description: 'Show a list of all (sub-)commands.'
+    #permission: maintenancemode.command.mm
+    #permission-message: 'You are lacking the permission "maintenancemode.command.mm".'
+    usage: 'Please use "/mm".'
+
+permissions:
+  maintenancemode.preset.admin:
+    description: Permission to access all (sub-)commands.
+    default: op
+    children:
+      maintenancemode.command.mm: true
+      maintenancemode.command.mm.active: true
+      maintenancemode.command.mm.operator: true
+      maintenancemode.command.mm.permission: true
+      maintenancemode.command.mm.kickmessage: true
+      maintenancemode.command.mm.motd: true
+      maintenancemode.command.mm.reload: true
+      maintenancemode.command.mm.reset: true
+      maintenancemode.permission.bypass: true
