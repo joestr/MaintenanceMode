@@ -1,0 +1,6 @@
+config:
+  active: false
+  operator: true
+  permission: true
+  kickmessage: "&4Maintenance mode"
+  motd: "&4Maintenance mode"
