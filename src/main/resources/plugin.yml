@@ -1,5 +1,5 @@
 name: MaintenanceMode
-version: 1.0.0
+version: ${project.version}
 description: Put your server in maintenance mode.
 author: joestr
 authors: [Smauq_, Doskozil, _joestr_] 
